@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="song-list" id="song-list"></div>   
+    </div>
+    <audio ></audio>
+        <div class="bottom">
+            <img class="musicImage" src="" id="music_image" alt="">
+            <div class="bottom_inner">
+                <h2 style="margin: 10px 0;" id="title"></h2>
+                <input type="range" name="range" id="myProgressbar" min="0" max="1000" value="0">
+                <div class="">
+                <span id="time_stamp" class="time_stamp">00:00</span>
+                <span id="music_lenght" class="length">00:00</span>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-repeat sm-control" id="repeat" title="Repeat Song"></i>
+                <i class="fas fa-backward fa-3x hover_circle" id="prev" title="Previous"></i>
+                <i class="fas fa-pause-circle fa-4x hover_circle" id="main_play" title="Play/Pause"></i>
+                <i class="fas fa-forward fa-3x hover_circle" id="next" title="Next"></i>
+                <i class="fas fa-random sm-control" id="random" title="Play Random song"></i>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="music.js"></script>
+</html>
